@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: worker
-          image: sreelakshmi248/complex_worker
+          image: haritha/complex_worker
           resources:
                   limits:
                     memory: "128Mi"
