@@ -7,7 +7,7 @@ metadata:
 spec:
     containers:
       - name: client
-        image: sreelakshmi248/complex_client
+        image: haritha/complex_client
         ports:
             - containerPort: 3000
         resources:
