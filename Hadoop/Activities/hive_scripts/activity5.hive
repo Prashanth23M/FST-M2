@@ -7,7 +7,7 @@ LOAD DATA LOCAL INPATH 'root/empData.csv' INTO TABLE employee;
 SELECT * FROM employee;
 SELECT COUNT(*) FROM employee;
 
-INSERT OVERWRITE DIRECTORY '/user/charumathyp/HiveOutput'
+INSERT OVERWRITE DIRECTORY '/user/prashanth/HiveOutput'
 ROW FORMAT DELIMITED FIELDS TERMINATED BY ','
 SELECT * FROM emp.employee;
 
