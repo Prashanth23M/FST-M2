@@ -1,7 +1,7 @@
 -- Load input file from HDFS
-inputFile1 = LOAD 'hdfs:///user/charumathyp/inputs/episodeIV_dialogues.txt' USING PigStorage('\t') AS (name:chararray,line:chararray);
-inputFile2 = LOAD 'hdfs:///user/charumathyp/inputs/episodeV_dialogues.txt' USING PigStorage('\t') AS (name:chararray,line:chararray);
-inputFile3 = LOAD 'hdfs:///user/charumathyp/inputs/episodeVI_dialogues.txt' USING PigStorage('\t') AS (name:chararray,line:chararray);
+inputFile1 = LOAD 'hdfs:///user/prashanth/inputs/episodeIV_dialogues.txt' USING PigStorage('\t') AS (name:chararray,line:chararray);
+inputFile2 = LOAD 'hdfs:///user/prashanth/inputs/episodeV_dialogues.txt' USING PigStorage('\t') AS (name:chararray,line:chararray);
+inputFile3 = LOAD 'hdfs:///user/prashanth/inputs/episodeVI_dialogues.txt' USING PigStorage('\t') AS (name:chararray,line:chararray);
 
 randked1 = RANK  inputFile1;
 onlydialog1 = FILTER ranked1 BY(rank_inputFile1>2);  
