@@ -18,6 +18,6 @@ names = FOREACH groupByName generate $0 AS name, COUNT($1) as numberOfLines;
 
 ordered = ORDER names BY numberOfLines DESC;
 
-STORE ordered INTO 'hdfs:///user/charumathyp/output' USING PigStorage('\t');
+STORE ordered INTO 'hdfs:///user/prashanth/output' USING PigStorage('\t');
 
 
